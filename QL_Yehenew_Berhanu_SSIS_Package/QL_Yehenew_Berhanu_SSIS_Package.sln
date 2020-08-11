@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "QL_Yehenew_Berhanu_SSIS_Package", "QL_Yehenew_Berhanu_SSIS_Package.dtproj", "{51D6EE74-C555-436A-BC78-68CE43FD2CFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51D6EE74-C555-436A-BC78-68CE43FD2CFC}.Development|Default.ActiveCfg = Development
+		{51D6EE74-C555-436A-BC78-68CE43FD2CFC}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A627F40-2DD9-4978-8A9D-FD8D6955E42E}
+	EndGlobalSection
+EndGlobal
