@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-JVPMKO4"
   DTS:CreatorName="DESKTOP-JVPMKO4\user"
-  DTS:DTSID="{9D8B8C85-A4DF-460C-9380-BE476E6BF0BF}"
+  DTS:DTSID="{AE3C4C0A-155C-4D14-B658-1AD3C3C7DBAE}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.123"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Pkg_Yehenew_Berhanu_Quicken_Loans_Master"
+  DTS:ObjectName="Pkg_Yehenew_Berhanu_LendingPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="80"
-  DTS:VersionGUID="{3A863EC7-8EA3-45D4-999A-48AD09955571}">
+  DTS:VersionBuild="66"
+  DTS:VersionGUID="{DE5C5D0B-CA4C-4843-BCF8-D3A14CFF9291}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-JVPMKO4\MSSQLSERVER01.QLSSISLOG]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{921EB353-1549-4769-86EF-49E827A4442D}"
+      DTS:DTSID="{E1F1064B-5F71-4350-B443-0DBDAD82D91B}"
       DTS:ObjectName="DESKTOP-JVPMKO4\MSSQLSERVER01.QLSSISLOG">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -31,7 +31,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{D91A882B-C7E6-43E3-83A3-81DDDF1B415D}"
+      DTS:DTSID="{EA35E052-C9D4-43D9-BB49-269E2C8095D7}"
       DTS:ObjectName="ODataSource_ConnectionString">
       <DTS:Property
         DTS:DataType="8"
@@ -41,7 +41,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{54D6A9DF-BC20-4D31-94A3-EDBD7392333C}"
+      DTS:DTSID="{0B75084B-2A5F-4A4D-97F1-0ACCB35F9FDE}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="LoadBy">
@@ -50,7 +50,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{50B46D77-C7B7-4B9F-B512-C2DF477E2647}"
+      DTS:DTSID="{A5F9B6A0-EA13-4BE8-8715-49EFBEC0B924}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="NumberOfRowsInserted">
@@ -59,7 +59,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{08B5A51E-21FB-4B4E-BF2C-910040B89B32}"
+      DTS:DTSID="{334DB1E8-4FCF-4690-BA29-DAABD72DBFCE}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
@@ -68,7 +68,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D291B1E1-C6A3-4B07-B586-78C50BE11726}"
+      DTS:DTSID="{B548771E-1327-470E-927D-4C6ABC14C94A}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFromEmail">
@@ -77,16 +77,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BCFA5A2E-601F-4A18-8563-EA38774D377D}"
-      DTS:IncludeInDebugDump="6789"
-      DTS:Namespace="User"
-      DTS:ObjectName="Variable">
-      <DTS:VariableValue
-        DTS:DataType="4">0.</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{EFBCB776-E451-4E87-ABF7-9473A85CB911}"
+      DTS:DTSID="{530C9F5D-4F14-4FF7-9E8D-673AD93A55EE}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varLoadDate">
@@ -95,17 +86,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{DA52C9AE-AE87-40CE-9D6E-DD329276D2CB}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="varMasterParents">
-      <DTS:VariableValue
-        DTS:DataType="8"
-        xml:space="preserve"></DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{CCAB896D-EC36-40F7-8490-688A7A2C0F76}"
+      DTS:DTSID="{F280301F-9835-41FB-A5DD-E448BC1F1296}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarPackage">
@@ -115,7 +96,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E8928D7A-6E1C-4DD5-B3D7-E709E6A07C5F}"
+      DTS:DTSID="{B621E5BA-8C26-41D2-AD5B-26B6731D62F6}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::varPackageName]"
       DTS:IncludeInDebugDump="2345"
@@ -126,7 +107,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1FA14FB6-A955-4F37-AAB0-C86B9CED4C85}"
+      DTS:DTSID="{361E3EBD-166E-4DCB-94F9-F5F1DD0C834B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPassword">
@@ -135,7 +116,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F7EF6BED-6B8E-4D02-AB50-5A06E465A23A}"
+      DTS:DTSID="{D8C2990C-8BA2-402C-858D-77B1DB35A1B2}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[System::MachineName]"
       DTS:IncludeInDebugDump="2345"
@@ -146,7 +127,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B99C132F-A169-458D-9C4A-ED2493003F2E}"
+      DTS:DTSID="{6D1FB706-7C32-4DAB-821C-4A4A80CCDA57}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="varRutime">
@@ -155,7 +136,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E562F2FE-9F42-4018-9273-0848B99C5F56}"
+      DTS:DTSID="{3749AF3F-00CE-4810-BC6E-3AFDF7C99E92}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpClient">
@@ -164,7 +145,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3A6BA79F-35CD-48F8-A14D-D10357FC0FE4}"
+      DTS:DTSID="{B63320BA-81E9-4634-AC5D-411A92B5DD4E}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpServerPort">
@@ -173,7 +154,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4A1DCF9F-9B10-4759-A2A4-6FDD5F53D825}"
+      DTS:DTSID="{08A07F4A-B2BF-40C7-86C4-20296D4EB1FA}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="Replace(Reverse(Substring(reverse(&quot;C::\\Users\\user\\source\\repos\\Duna_ETL_Yehenew_Berhanu\\QL_Yehenew_Berhanu_SSIS_Package\\Pkg_Yehenew_Berhanu_LendingQB.dtsx&quot;),1,14)),&quot;.dtsx&quot;,&quot;&quot;)"
       DTS:IncludeInDebugDump="2345"
@@ -184,7 +165,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0D59761F-1D11-4BEB-B866-451B3CA52CFE}"
+      DTS:DTSID="{817C40D3-FF0E-42BC-B746-F99B0067B79F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varsubject">
@@ -193,7 +174,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9359539E-6722-49FD-BE15-611BC470BA28}"
+      DTS:DTSID="{A2FFFAFC-3FCF-4EDE-9ACF-A943E8356F5D}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="vartimeStamp">
@@ -202,7 +183,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A6EC941E-8C52-4982-A8C7-DF994266ED3B}"
+      DTS:DTSID="{6C6E342A-A602-4804-B39D-738004598D52}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="vartoEmail">
@@ -215,7 +196,7 @@
       DTS:refId="Package\DFL_ODDataSource"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{38B1C25A-E7AB-40D2-A288-CC65434A881C}"
+      DTS:DTSID="{B76A2929-87C1-4D02-8589-229728E106FF}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="DFL_ODDataSource"
@@ -225,7 +206,7 @@
         <DTS:EventHandler
           DTS:refId="Package\DFL_ODDataSource.EventHandlers[OnError]"
           DTS:CreationName="OnError"
-          DTS:DTSID="{B199BCAC-6E99-4074-ADAE-C25677630A71}"
+          DTS:DTSID="{31B09AA3-BA60-4F55-9A52-6F3305129926}"
           DTS:EventID="0"
           DTS:EventName="OnError"
           DTS:LocaleID="-1">
@@ -233,7 +214,7 @@
             <DTS:Variable
               DTS:CreationName=""
               DTS:Description="The propagate property of the event"
-              DTS:DTSID="{C213A281-A7CD-4A6F-802D-C55C340866DD}"
+              DTS:DTSID="{E84865B1-8034-480B-9282-8FC9B90C8BA7}"
               DTS:IncludeInDebugDump="6789"
               DTS:Namespace="System"
               DTS:ObjectName="Propagate">
@@ -246,7 +227,7 @@
               DTS:refId="Package\DFL_ODDataSource.EventHandlers[OnError]\EST_inserting ETL Error into QUicken_Loan_ETL_Error_Log table task"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{58F7A7D3-C6B6-4D7B-862D-269E18370E9B}"
+              DTS:DTSID="{71BC36B0-B689-44AC-ABF9-CA0EEEE1F53E}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="EST_inserting ETL Error into QUicken_Loan_ETL_Error_Log table task"
@@ -254,7 +235,7 @@
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{921EB353-1549-4769-86EF-49E827A4442D}"
+                  SQLTask:Connection="{E1F1064B-5F71-4350-B443-0DBDAD82D91B}"
                   SQLTask:SqlStatementSource="insert into Quicken_Loans_ETL_Error_log&#xA;&#xA;(    [PackageID]&#xA;      ,[PackageName]&#xA;      ,[SourceName]&#xA;      ,[LoadDate]&#xA;      ,[RunBy]&#xA;      ,[ErrorCode]&#xA;      ,[ErrorDescription]&#xA;)&#xA;&#xA;Values(?,?,?,?,?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ParameterBinding
                     SQLTask:ParameterName="0"
@@ -305,7 +286,7 @@
               DTS:refId="Package\DFL_ODDataSource.EventHandlers[OnError]\SMT_Sending Mail into the Team"
               DTS:CreationName="Microsoft.SendMailTask"
               DTS:Description="Send Mail Task"
-              DTS:DTSID="{872D4A00-BB42-4AA3-B4E2-ADE7F26EE685}"
+              DTS:DTSID="{3D7FC731-15DC-4FB1-8EDF-9EFF3B8BA3BA}"
               DTS:ExecutableType="Microsoft.SendMailTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="SMT_Sending Mail into the Team"
@@ -335,7 +316,7 @@ Yehenew"</DTS:PropertyExpression>
                   SendMailTask:From="qletlteam@gmail.com"
                   SendMailTask:To="qletlteam@gmail.com"
                   SendMailTask:Subject="Check ETL Notification Below"
-                  SendMailTask:MessageSource="Hi Team&#xA;This package Pkg_Yehenew_Berhanu_Quicken_Loans_Master Has Failed in the below error&#xA;Errorcod:0&#xA;Error description: &#xA;Error Source :   &#xA;&#xA;&#xA;Please contact SSIS Team if you have any question&#xA;Thank you &#xA;Yehenew" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+                  SendMailTask:MessageSource="Hi Team&#xA;This package Pkg_Yehenew_Berhanu_LendingPad Has Failed in the below error&#xA;Errorcod:0&#xA;Error description: &#xA;Error Source :   &#xA;&#xA;&#xA;Please contact SSIS Team if you have any question&#xA;Thank you &#xA;Yehenew" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -5307,12 +5288,12 @@ where [refTable].[MarketSourceName] = ?</property>
       DTS:refId="Package\EST_Inserting_Source Package Name into Staging Table Using a variable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{7DF389FB-7F7F-46CB-AB14-E810ADDC22F9}"
+      DTS:DTSID="{7DD4FDE4-204F-4E21-BF5B-7AA7D414587E}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="EST_Inserting_Source Package Name into Staging Table Using a variable"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5325,16 +5306,16 @@ where [refTable].[MarketSourceName] = ?</property>
       DTS:refId="Package\EST_RowCountInserted into the table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{E175BC68-28EE-4D91-B188-481EDF6BD3A2}"
+      DTS:DTSID="{F9884F98-9E05-4936-A3C9-C2B0124A70C3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="EST_RowCountInserted into the table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{921EB353-1549-4769-86EF-49E827A4442D}"
+          SQLTask:Connection="{E1F1064B-5F71-4350-B443-0DBDAD82D91B}"
           SQLTask:SqlStatementSource="insert into dbo.QL_Yehenew_Berhanu_ETL_Log(NumberOfRowsInserted) values (?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -5349,12 +5330,12 @@ where [refTable].[MarketSourceName] = ?</property>
       DTS:refId="Package\EST_Using Variabls and Insert the values into ETL_log table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{93A9D880-C4FF-4A45-A3D3-5B98FCA06076}"
+      DTS:DTSID="{3CF92B01-4096-4AE9-82CA-F7512503E2A7}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="EST_Using Variabls and Insert the values into ETL_log table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5393,87 +5374,12 @@ where [refTable].[MarketSourceName] = ?</property>
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Foreach Loop Container"
-      DTS:CreationName="STOCK:FOREACHLOOP"
-      DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{136AF302-6717-4CC8-B422-1091189133E3}"
-      DTS:ExecutableType="STOCK:FOREACHLOOP"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Loop Container">
-      <DTS:ForEachEnumerator
-        DTS:CreationName="Microsoft.ForEachItemEnumerator"
-        DTS:DTSID="{409D17DA-AF0F-4461-9BC9-5CCDDD699B49}"
-        DTS:ObjectName="{409D17DA-AF0F-4461-9BC9-5CCDDD699B49}">
-        <DTS:ObjectData>
-          <FEIEItems>
-            <FEIEItem>
-              <FEIEItemValue
-                Type="8"
-                Value="Pkg_Yehenew_Berhanu_LendingQB.dtsx" />
-            </FEIEItem>
-            <FEIEItem>
-              <FEIEItemValue
-                Type="8"
-                Value="Pkg_Yehenew_Berhanu_LendingPade.dtsx" />
-            </FEIEItem>
-            <FEIEItem>
-              <FEIEItemValue
-                Type="8"
-                Value="Pkg_Yehenew_Berhanu_LendingWise.dtsx" />
-            </FEIEItem>
-            <FEIEItem>
-              <FEIEItemValue
-                Type="8"
-                Value="Pkg_Yehenew_Berhanu_LendingLoan.dtsx" />
-            </FEIEItem>
-            <FEIEItem>
-              <FEIEItemValue
-                Type="8"
-                Value="Pkg_Yehenew_Berhanu_SimpleNexus.dtsx" />
-            </FEIEItem>
-            <FEIEItem>
-              <FEIEItemValue
-                Type="8"
-                Value="Pkg_Yehenew_Berhanu_UberWriter.dtsx" />
-            </FEIEItem>
-          </FEIEItems>
-        </DTS:ObjectData>
-      </DTS:ForEachEnumerator>
-      <DTS:Variables />
-      <DTS:Executables>
-        <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\EPT_Using_this_task_to_execute_all_packages(MasterPackage)"
-          DTS:CreationName="Microsoft.ExecutePackageTask"
-          DTS:Description="Execute Package Task"
-          DTS:DTSID="{90582687-F996-4263-B500-22D2892F6AD1}"
-          DTS:ExecutableType="Microsoft.ExecutePackageTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="EPT_Using_this_task_to_execute_all_packages(MasterPackage)"
-          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <ExecutePackageTask>
-              <UseProjectReference>True</UseProjectReference>
-            </ExecutePackageTask>
-          </DTS:ObjectData>
-        </DTS:Executable>
-      </DTS:Executables>
-      <DTS:ForEachVariableMappings>
-        <DTS:ForEachVariableMapping
-          DTS:CreationName=""
-          DTS:DTSID="{6015C339-1F80-468B-95D4-8167B9A03CB0}"
-          DTS:ObjectName="{6015C339-1F80-468B-95D4-8167B9A03CB0}"
-          DTS:ValueIndex="0"
-          DTS:VariableName="User::varMasterParents" />
-      </DTS:ForEachVariableMappings>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:EventHandlers>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{773AA34F-A183-4C7C-A135-B7E511E087F9}"
+      DTS:DTSID="{34AF41F4-C213-458F-BDEB-15E17D430153}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -5481,7 +5387,7 @@ where [refTable].[MarketSourceName] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{4DE225E8-B3F1-4361-9E16-A94986BEDC59}"
+          DTS:DTSID="{FB55C1B1-D802-4B55-B61E-320310B58087}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -5494,7 +5400,7 @@ where [refTable].[MarketSourceName] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\EST_Quicken_Loans_ETL_Error_Log Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{7F779763-3C0B-405C-9A8E-6C0018D8A2A4}"
+          DTS:DTSID="{6DFE0562-CF82-4CC9-85E8-43CF193270EB}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="EST_Quicken_Loans_ETL_Error_Log Task"
@@ -5553,7 +5459,7 @@ where [refTable].[MarketSourceName] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\SMT_Sending Email Error Notification to Dunatek Support team"
           DTS:CreationName="Microsoft.SendMailTask"
           DTS:Description="Send Mail Task"
-          DTS:DTSID="{6EF9C470-E432-4C03-ACE3-D17BAEDB4065}"
+          DTS:DTSID="{7FE0A618-2A69-4BA0-897E-D87962BBA4A2}"
           DTS:ExecutableType="Microsoft.SendMailTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="SMT_Sending Email Error Notification to Dunatek Support team"
@@ -5583,7 +5489,7 @@ Yehenew"</DTS:PropertyExpression>
               SendMailTask:From="qletlteam@gmail.com"
               SendMailTask:To="qletlteam@gmail.com"
               SendMailTask:Subject="Check ETL Notification Below"
-              SendMailTask:MessageSource="Hi Team&#xA;This package Pkg_Yehenew_Berhanu_Quicken_Loans_Master Has Failed in the below error&#xA;Errorcod:0&#xA;Error description: &#xA;Error Source :   &#xA;&#xA;&#xA;Please contact SSIS Team if you have any question&#xA;Thank you &#xA;Yehenew" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+              SendMailTask:MessageSource="Hi Team&#xA;This package Pkg_Yehenew_Berhanu_LendingPad Has Failed in the below error&#xA;Errorcod:0&#xA;Error description: &#xA;Error Source :   &#xA;&#xA;&#xA;Please contact SSIS Team if you have any question&#xA;Thank you &#xA;Yehenew" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -5591,7 +5497,7 @@ Yehenew"</DTS:PropertyExpression>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{213738DC-D6F2-4764-83A3-34362B7DC060}"
+          DTS:DTSID="{F65CC90D-5EBC-44BA-94EB-31812D7DC856}"
           DTS:From="Package.EventHandlers[OnError]\EST_Quicken_Loans_ETL_Error_Log Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -5610,34 +5516,23 @@ Yehenew"</DTS:PropertyExpression>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="268.666666666667,62.6666666666667"
+          Size="268.666666666667,42"
           Id="Package\DFL_ODDataSource"
-          TopLeft="539.017849110865,102.74761722227" />
+          TopLeft="106.666665077209,14.3166664225856" />
         <NodeLayout
-          Size="276,76.6666666666667"
+          Size="276,42.6666666666667"
           Id="Package\EST_Inserting_Source Package Name into Staging Table Using a variable"
-          TopLeft="534.985111075719,268.256542822246" />
+          TopLeft="97.6041652122514,160.820830457632" />
         <NodeLayout
-          Size="271.333333333334,64.6666666666667"
+          Size="271.333333333334,42"
           Id="Package\EST_RowCountInserted into the table"
-          TopLeft="549.523801335267,194.549996819199" />
+          TopLeft="101.874998481944,85.5666654346387" />
         <NodeLayout
-          Size="281.333333333334,70.6666666666667"
+          Size="281.333333333334,48.6666666666667"
           Id="Package\EST_Using Variabls and Insert the values into ETL_log table"
-          TopLeft="552.604158432223,444.383325387139" />
-        <NodeLayout
-          Size="378.666666666667,42.6666666666667"
-          Id="Package\Foreach Loop Container\EPT_Using_this_task_to_execute_all_packages(MasterPackage)"
-          TopLeft="5.5,28.7999977684021" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="464.666666666667,141.333333333334"
-          Size="464.666666666667,184"
-          Id="Package\Foreach Loop Container"
-          TopLeft="22.7083329949527,40.5708326078703" />
+          TopLeft="98.8541651936249,254.149995455443" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

@@ -2,43 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Yehenew_Berhanu_SSIS_Packages</Name>
-    <LastWriteTime>2020-08-27T16:29:41.3463528Z</LastWriteTime>
+    <LastWriteTime>2020-09-04T13:25:30.8622451Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Yehenew_Berhanu_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-08-27T17:27:47.9273863Z</LastWriteTime>
+      <LastWriteTime>2020-09-07T17:34:02.6704714Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Pkg_Yehenew_Berhanu_LendingWise.dtsx</Name>
-      <LastWriteTime>2020-08-21T17:47:59.2539821Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Pkg_Yehenew_Berhanu_QuickenLoan.dtsx</Name>
-      <LastWriteTime>2020-08-21T17:47:59.2379913Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Pkg_Yehenew_Berhanu_LendingPad.dtsx</Name>
-      <LastWriteTime>2020-08-27T16:29:41.2888376Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Pkg_Yehenew_Berhanu_SimpleNexus.dtsx</Name>
-      <LastWriteTime>2020-08-21T17:47:59.2050098Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Pkg_Yehenew_Berhanu_UberWriter.dtsx</Name>
-      <LastWriteTime>2020-08-21T17:47:59.1850208Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Pkg_Yehenew_Berhanu_Quicken_Loans_Master.dtsx</Name>
-      <LastWriteTime>2020-08-27T16:29:41.3088256Z</LastWriteTime>
+      <Name>Package1.dtsx</Name>
+      <LastWriteTime>2020-09-04T22:08:00.3534144Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

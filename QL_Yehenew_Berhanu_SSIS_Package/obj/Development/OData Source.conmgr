@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="OData Source"
   DTS:DTSID="{2AD2E003-05AE-4A61-A1F5-1F541F4CE301}"
@@ -13,7 +13,7 @@
       MicrosoftOnlineServicesAuth="True"
       AuthType="MicrosoftOnlineService">
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/n1+T2Gn0GWbM8RfeG3OwAAAAACAAAAAAAQZgAAAAEAACAAAAAenkVVienBo3m8iVctjhc9G5nUn1x51ujp0n1cJsXLTAAAAAAOgAAAAAIAACAAAAALhmaMRSACbqFbx+uIoCwQtIcK3eFdmHXT8CqXc4bKykAAAAA8fZly/nunyoMNv1Q3i8B16tgjyz+8G9mwtB7e9ZxPKbz/tVZHynzBsYzaZQZJakaeI1B1DC0XYuZYO8OXc/EDQAAAAEPzXFZCXNtvGGHRaMRniFy4+zDPthl4aqoJhNssNpTrf/3SPJnQxAj5sBrZwe2VZ1HbrNmiAE8yRNFt6+ocFDk=</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/n1+T2Gn0GWbM8RfeG3OwAAAAACAAAAAAAQZgAAAAEAACAAAACzW+LOM/EatF6s+5mckuDBG2ICtE5q2Z+SDs1O7JszZgAAAAAOgAAAAAIAACAAAABebEbQPaFluZ/+jIJ2fd2YjX6nUNa9PT0TGe8XEX6iVkAAAAC4se653dCaTR738n4H3qwlPvSESSwsQVMMmkVlytYLy398eI7vf1O+7PHEeD5fGwGhe6rhaPyIUGg73/IIFGv/QAAAAFTdLyxllrtx6tvwb5rb2UA6g2uTQuH8TPVG2wVFQPhx6bSFQZ2RTZNlgB0GVDyEOpGq+KnC3bH2oryK8Cizl1E=</Password>
     </ODataConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

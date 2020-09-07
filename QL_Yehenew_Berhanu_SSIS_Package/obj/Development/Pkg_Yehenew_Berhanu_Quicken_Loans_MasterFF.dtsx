@@ -1,18 +1,18 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/21/2020 7:17:30 AM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-JVPMKO4"
   DTS:CreatorName="DESKTOP-JVPMKO4\user"
-  DTS:DTSID="{B8131E23-B438-4E46-9B23-F659D65ADA0C}"
+  DTS:DTSID="{D78719CA-85E6-436D-A66A-633B954820AD}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.123"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Pkg_Yehenew_Berhanu_Quicken_Loans_Master"
+  DTS:ObjectName="Pkg_Yehenew_Berhanu_Quicken_Loans_MasterFF"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{BBE8F144-6A1D-446A-B7D1-DA177D6006AB}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{8E01DA63-E379-4B17-B65A-0A9530E20C6E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -112,49 +112,6 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\EST_ETL_Log_Table"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{13009741-FA15-466D-9D2D-8DEE058B7F08}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="EST_ETL_Log_Table"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{F56681DA-C100-4837-9E35-5840867870F3}"
-          SQLTask:SqlStatementSource="insert into QL_Yehenew_Berhanu_ETL_Log&#xA; (     PackageID,&#xA;       PackageName,&#xA;      SourceName ,&#xA;      Runtime,&#xA;      Runby ,&#xA;     NumberOfRowsInserted ,&#xA;     MaxLastModifieDate &#xA;)&#xA;values (?,?,?,?,?,?,?)"
-          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="NewParameterName"
-            SQLTask:DtsVariableName="System::PackageID"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="72"
-            SQLTask:ParameterSize="0" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="NewParameterName"
-            SQLTask:DtsVariableName="System::PackageName"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="NewParameterName"
-            SQLTask:DtsVariableName="$Project::DESKTOPJVPMKO4_MSSQLSERVER01STGQL_ConnectionString"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="3"
-            SQLTask:ParameterSize="-1" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="NewParameterName"
-            SQLTask:DtsVariableName="$Project::DESKTOPJVPMKO4_MSSQLSERVER01STGQL_ConnectionString"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="3"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
@@ -226,8 +183,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{9D30404E-2E44-4ADF-BB29-3D57FA36DC08}"
-          DTS:ObjectName="{9D30404E-2E44-4ADF-BB29-3D57FA36DC08}"
+          DTS:DTSID="{A6DA42C5-FD9A-4EBC-8257-8EDFC7C078E1}"
+          DTS:ObjectName="{A6DA42C5-FD9A-4EBC-8257-8EDFC7C078E1}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::VarMasterParent" />
       </DTS:ForEachVariableMappings>
@@ -302,7 +259,7 @@ Yehenew"</DTS:PropertyExpression>
               SendMailTask:From="qletlteam@gmail.com"
               SendMailTask:To="qletlteam@gmail.com"
               SendMailTask:Subject="Check ETL Notification below"
-              SendMailTask:MessageSource="Hi Team&#xA;This package Pkg_Yehenew_Berhanu_Quicken_Loans_Master Has Failed in the below error&#xA;Errorcod:0&#xA;Error description: &#xA;Error Source :   &#xA;8/21/2020 8:00:59 AM&#xA;&#xA;Please contact SSIS Team if you have any question&#xA;Thank you &#xA;Yehenew" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+              SendMailTask:MessageSource="Hi Team&#xA;This package Pkg_Yehenew_Berhanu_Quicken_Loans_MasterFF Has Failed in the below error&#xA;Errorcod:0&#xA;Error description: &#xA;Error Source :   &#xA;8/21/2020 8:00:59 AM&#xA;&#xA;Please contact SSIS Team if you have any question&#xA;Thank you &#xA;Yehenew" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -323,18 +280,14 @@ Yehenew"</DTS:PropertyExpression>
         <NodeLayout
           Size="289.333333333334,42.6666666666667"
           Id="Package\Foreach Loop Container\EST_Quicken_Loans_Master(ParentPackage)"
-          TopLeft="14.7083311074724,28.0357127830386" />
+          TopLeft="14.7083311074724,27.3857127946615" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="321.333333333334,117.333333333334"
-          Size="321.333333333334,160.666666666667"
+          PanelSize="321.333333333334,126"
+          Size="321.333333333334,168.666666666667"
           Id="Package\Foreach Loop Container"
           TopLeft="78.7499988265334,22.2857138872146" />
-        <NodeLayout
-          Size="176,42.6666666666667"
-          Id="Package\EST_ETL_Log_Table"
-          TopLeft="126.78571239646,201.499996396899" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -344,13 +297,13 @@ Yehenew"</DTS:PropertyExpression>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="150.666666666667,42.6666666666667"
-          Id="Package.EventHandlers[OnError]\Send Mail Task"
-          TopLeft="368.749998230487,45.3999993491173" />
-        <NodeLayout
           Size="149.333333333334,42.6666666666667"
           Id="Package.EventHandlers[OnError]\ETL_Error_Log"
           TopLeft="83.5937487543561,30.0624994624406" />
+        <NodeLayout
+          Size="150.666666666667,42.6666666666667"
+          Id="Package.EventHandlers[OnError]\Send Mail Task"
+          TopLeft="368.749998230487,45.3999993491173" />
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
