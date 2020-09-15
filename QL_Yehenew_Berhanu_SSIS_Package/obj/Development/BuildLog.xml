@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Yehenew_Berhanu_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-04T13:25:30.8622451Z</LastWriteTime>
+    <LastWriteTime>2020-09-12T19:12:22.2684837Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Yehenew_Berhanu_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-07T17:34:02.6704714Z</LastWriteTime>
+      <LastWriteTime>2020-09-15T03:37:45.099445Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2020-09-04T22:08:00.3534144Z</LastWriteTime>
+      <Name>Pkg_Yehenew_Berhanu_QuickenLoan.dtsx</Name>
+      <LastWriteTime>2020-09-15T16:38:18.8880673Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
