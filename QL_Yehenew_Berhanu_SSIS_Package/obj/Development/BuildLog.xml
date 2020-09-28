@@ -2,18 +2,38 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Yehenew_Berhanu_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-12T19:12:22.2684837Z</LastWriteTime>
+    <LastWriteTime>2020-09-26T20:25:16.1630864Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Yehenew_Berhanu_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-15T03:37:45.099445Z</LastWriteTime>
+      <LastWriteTime>2020-09-25T16:24:20.6707631Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Yehenew_Berhanu_QuickenLoan.dtsx</Name>
-      <LastWriteTime>2020-09-15T16:38:18.8880673Z</LastWriteTime>
+      <LastWriteTime>2020-09-24T17:49:31.045585Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Yehenew_Berhanu_UberWriter.dtsx</Name>
+      <LastWriteTime>2020-09-25T20:02:10.1118319Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Yehenew_Berhanu_LendingPad.dtsx</Name>
+      <LastWriteTime>2020-09-26T21:47:20.6709699Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Yehenew_Berhanu_SimpleNexus.dtsx</Name>
+      <LastWriteTime>2020-09-28T02:52:22.3168206Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Yehenew_Berhanu_Quicken_Loan_Master.dtsx</Name>
+      <LastWriteTime>2020-09-26T18:22:13.2663079Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

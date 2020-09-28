@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/21/2020 7:08:52 AM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Yehenew_Berhanu_UberWriter"
   DTS:PackageType="5"
-  DTS:VersionBuild="323"
-  DTS:VersionGUID="{DC3F2CE2-4A70-411A-BA5D-8F1185396421}">
+  DTS:VersionBuild="310"
+  DTS:VersionGUID="{931BE635-637F-4D71-98F6-C21ED4589E9E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/n1+T2Gn0GWbM8RfeG3OwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAfJEWj9YX/wJqy/A72BtZBBPCLU4/8GlFTGk4AVMiD2wAAAAAOgAAAAAIAACAAAADaYURLdQ7Ua7XO8mU2J4aSxU+dwZbdo1n4RXlZxX6XQSAAAABMULI43s9h00QdVV94lSzNkG+YRqfDXL851v0YrLw6sUAAAACCTbNSk5oZkg18V6Ci6GifHJ6wfaS4Vtuzu/BxDgxSOwDnmaeoddqQPi/qivOhCcPSxqc1QTGptWaXZ0+GOcK9</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/n1+T2Gn0GWbM8RfeG3OwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB6lgr7CUscodjhL2eeEqhKCk9g4l9z+GOBgKKS6rPpUgAAAAAOgAAAAAIAACAAAAARAfuYZru1W6z60LLt7EWfEdQkSVTVVhFFWQKskbBFVCAAAAAkBtwQUftkIVjEh4QhJrMLKKYaLA/I8t6v/GE9Hufj9EAAAADiiTCSpK01v0qvBfIP9VFujkErb7l2d9ICD9eBvj5Z712WSyzoaB/f/3e0ct8I+DKl6TyG6gbwi3ffGzxx4zxi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,6 +61,28 @@
       DTS:ObjectName="varBody">
       <DTS:VariableValue
         DTS:DataType="8">Check ETL Notification Below </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6BD4890C-F058-4B22-A070-A19AC1503CE4}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;Delete  From [dbo].[Stg_Yehenew_Berhanu_QL] Where [SourceName]='LendingQB' &quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varDeleteLendingQBRecords">
+      <DTS:VariableValue
+        DTS:DataType="8">Delete  From [dbo].[Stg_Yehenew_Berhanu_QL] Where [SourceName]='LendingQB' </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{99EE1B44-259B-474E-8488-A184D63639C5}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;Delete  From [dbo].[Stg_Yehenew_Berhanu_QL] Where [SourceName]='QuickenLoan' &quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varDeleteQuickenLoan">
+      <DTS:VariableValue
+        DTS:DataType="8">Delete  From [dbo].[Stg_Yehenew_Berhanu_QL] Where [SourceName]='QuickenLoan' </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -146,11 +168,13 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{647780CE-E1DB-4736-B552-D7F6DEBF292A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::varPackageName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPackageName">
       <DTS:VariableValue
-        DTS:DataType="8">QL_Yehenew_Berhanu_UberWriter</DTS:VariableValue>
+        DTS:DataType="8">QL_Yehenew_Berhanu_LendingQB</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -181,7 +205,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="varRutime">
       <DTS:VariableValue
-        DTS:DataType="7">9/25/2020 1:30:45 PM</DTS:VariableValue>
+        DTS:DataType="7">9/16/2020 6:51:02 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -230,7 +254,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/25/2020 1:30:45 PM</DTS:VariableValue>
+        DTS:DataType="7">9/16/2020 6:51:02 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -271,16 +295,9 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                   description="Specifies the SQL statement used by the component to extract data."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DECLARE @LastModifiedDate date  ;
-
-SET @LastModifiedDate = getdate ();
-
-SELECT
-    * 
-FROM dbo.QL_Loans
-    
-WHERE 
-    LastModifiedDate &gt; @LastModifiedDate</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT *  FROM [dbo].[QL_Loans]
+  where LastModifiedDate &gt;  '"+ @[User::LastMaxModifiedDate]+"'</property>
                 <property
                   dataType="System.Int32"
                   description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
@@ -299,7 +316,7 @@ WHERE
                   dataType="System.Int32"
                   description="Specify the mode to retrieve external column information"
                   name="AccessMode"
-                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
@@ -2755,11 +2772,6 @@ WHERE
                       cachedPrecision="27"
                       cachedScale="13"
                       lineageId="Package\DFT_UberWriter Task\ADO NET Source_Pull  UberWriter Data.Outputs[ADO NET Source Output].Columns[OriginationFee]" />
-                    <inputColumn
-                      refId="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[DocumentReviewedDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="DocumentReviewedDate"
-                      lineageId="Package\DFT_UberWriter Task\ADO NET Source_Pull  UberWriter Data.Outputs[ADO NET Source Output].Columns[DocumentReviewedDate]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3603,25 +3615,25 @@ WHERE
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]"
+                      refId="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]"
                       dataType="date"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]"
-                      name="DocumentReviewedDate__c37"
+                      lineageId="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]"
+                      name="ConditionsReceivedDate__c37"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DATE)#{Package\DFT_UberWriter Task\ADO NET Source_Pull  UberWriter Data.Outputs[ADO NET Source Output].Columns[DocumentReviewedDate]}</property>
+                          name="Expression">(DT_DATE)#{Package\DFT_UberWriter Task\ADO NET Source_Pull  UberWriter Data.Outputs[ADO NET Source Output].Columns[ConditionsReceivedDate]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DATE)DocumentReviewedDate</property>
+                          name="FriendlyExpression">(DT_DATE)ConditionsReceivedDate</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -6558,10 +6570,10 @@ WHERE
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[DocumentReviewedDate__c37]"
+                      refId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[ConditionsReceivedDate__c37]"
                       cachedDataType="date"
-                      cachedName="DocumentReviewedDate__c37"
-                      lineageId="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]">
+                      cachedName="ConditionsReceivedDate__c37"
+                      lineageId="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -9690,10 +9702,10 @@ WHERE
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate__c37]"
+                      refId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate__c37]"
                       dataType="date"
-                      lineageId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate__c37]"
-                      name="DocumentReviewedDate__c37">
+                      lineageId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate__c37]"
+                      name="ConditionsReceivedDate__c37">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -9704,7 +9716,7 @@ WHERE
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -11348,7 +11360,6 @@ WHERE
                           name="CopyFromReferenceColumn"
                           state="escaped">Insurance_Company</property>
                         <property
-                          containsID="true"
                           dataType="System.Null"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
                           name="SourceInputColumnLineageID" />
@@ -11923,11 +11934,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
                       lineageId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentResubmittedDate__c36]" />
                     <inputColumn
-                      refId="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[DocumentReviewedDate__c37]"
+                      refId="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[ConditionsReceivedDate__c37]"
                       cachedDataType="date"
-                      cachedName="DocumentReviewedDate__c37"
+                      cachedName="ConditionsReceivedDate__c37"
                       externalMetadataColumnId="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
-                      lineageId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate__c37]" />
+                      lineageId="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate__c37]" />
                     <inputColumn
                       refId="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[DocumentShippingDate__c38]"
                       cachedDataType="date"
@@ -13042,6 +13053,25 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\EST_Delete UberWriter  table Using Execute task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{460A9064-620D-4FCE-9CCC-49BF53C601F3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_Delete UberWriter  table Using Execute task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F56681DA-C100-4837-9E35-5840867870F3}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::varDeleteQuickenLoan" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\EST_MaxGetModifiedDate Task Using A variable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description=" SELECT *  FROM dbo.QL_Loans&#xA;WHERE  LastModifiedDate &gt;@[User::varMaxLastModifiedDate] "
@@ -13140,7 +13170,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{1962F26C-EE0D-4ABF-AB83-8C99F8424449}"
+      DTS:DTSID="{8391BDE3-F4DA-4707-881A-EC271438D200}"
       DTS:From="Package\EST_MaxGetModifiedDate Task Using A variable"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -13946,55 +13976,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
           Size="181.333333333334,42.6666666666667"
           Id="Package\DFT_UberWriter Task"
-          TopLeft="159.933033331099,399.182334155745" />
+          TopLeft="149.933033480111,273.082336410589" />
+        <NodeLayout
+          Size="237.333333333334,42.6666666666667"
+          Id="Package\EST_Delete UberWriter  table Using Execute task"
+          TopLeft="456.718743194361,96.3805538321367" />
         <NodeLayout
           Size="233.333333333334,42"
           Id="Package\EST_MaxGetModifiedDate Task Using A variable"
-          TopLeft="128.03323221914,119.196029805375" />
+          TopLeft="124.193946562064,61.8103165457968" />
         <NodeLayout
           Size="306,42.6666666666667"
           Id="Package\EST_Using the Variabls to Insert the values into ETL_log table"
-          TopLeft="659.102172718293,405.731540363998" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="247.649799441786,161.196029805375">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,237.98630435037"
-              Start="0,0"
-              End="0,230.48630435037">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,230.48630435037" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="521.602174767202,279.631542618842" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="341.266366664432,423.790270593205">
+          TopLeft="331.266366813444,297.690272848049">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="317.835806053861,0"
+              StartConnector="{x:Null}"
+              EndConnector="190.335807953758,0"
               Start="0,0"
-              End="310.335806053861,0">
+              End="182.835807953758,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="310.335806053861,0" />
+                    End="182.835807953758,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14020,6 +14032,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssge:FontInfo>
           </AnnotationLayout.FontInfo>
         </AnnotationLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="240.730156687754,103.810316545797">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,169.272019864792"
+              Start="0,0"
+              End="0,161.772019864792">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,161.772019864792" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -14081,10 +14115,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="185.333333333334,42.6666666666667"
-          Id="Package\DFT_UberWriter Task\Row Count"
-          TopLeft="558.124991683291,483.84761039575" />
-        <NodeLayout
           Size="283.333333333334,49.3333333333334"
           Id="Package\DFT_UberWriter Task\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values"
           TopLeft="928.33331950008,270.957138012052" />
@@ -14095,23 +14125,51 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="250,44"
           Id="Package\DFT_UberWriter Task\CST_Remove tast Loans values from the source and put dff table"
-          TopLeft="85.7217249131213,131.182140958457" />
+          TopLeft="100.305058029146,131.182140958457" />
         <NodeLayout
-          Size="276,55.3333333333334"
-          Id="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew)"
-          TopLeft="65.9548601283053,481.090073044524" />
-        <NodeLayout
-          Size="303.333333333334,48.6666666666667"
+          Size="303.333333333334,66"
           Id="Package\DFT_UberWriter Task\DC_using_this Derive column to conver and change the data type"
-          TopLeft="62.3933522448708,274.049598397681" />
+          TopLeft="73.0183520865459,258.449598676631" />
         <NodeLayout
-          Size="223.333333333334,51.3333333333334"
+          Size="223.333333333334,42.6666666666667"
           Id="Package\DFT_UberWriter Task\DRC_ Using derive column for converting null values into Dunatek"
           TopLeft="960.803557111493,483.414277070163" />
         <NodeLayout
           Size="265.333333333334,42.6666666666667"
           Id="Package\DFT_UberWriter Task\ADO NET Source_Pull  UberWriter Data"
-          TopLeft="84.5773797119481,6.43809512297312" />
+          TopLeft="91.8690462699605,6.43809512297312" />
+        <NodeLayout
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\DFT_UberWriter Task\Row Count"
+          TopLeft="558.124991683291,483.84761039575" />
+        <NodeLayout
+          Size="276,55.3333333333334"
+          Id="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew)"
+          TopLeft="65.9548601283053,481.090073044524" />
+        <EdgeLayout
+          Id="Package\DFT_UberWriter Task.Paths[Lookup Match Output]"
+          TopLeft="771.702373605577,294.966662237786">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="156.630945894503,0"
+              Start="0,0"
+              End="149.130945894503,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="149.130945894503,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="26.3740862285016,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_UberWriter Task.Paths[Fuzzy Lookup Output]"
           TopLeft="1071.23510497245,320.290471345385">
@@ -14136,18 +14194,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_UberWriter Task.Paths[Derived Column Output1]"
-          TopLeft="365.726685578204,296.346225763933">
+          TopLeft="376.351685419879,292.879559236742">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="127.309021360706,0"
+              EndConnector="116.684021519031,0"
               Start="0,0"
-              End="119.809021360706,0">
+              End="109.184021519031,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="119.809021360706,0" />
+                    End="109.184021519031,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14158,18 +14216,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_UberWriter Task.Paths[Derived Column Output]"
-          TopLeft="960.803557111493,507.130943732957">
+          TopLeft="960.803557111493,504.96427706629">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="-217.345232094869,0"
+              EndConnector="-217.345232094868,0"
               Start="0,0"
-              End="-209.845232094869,0">
+              End="-209.845232094868,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-209.845232094869,0" />
+                    End="-209.845232094868,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14180,42 +14238,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_UberWriter Task.Paths[Default Output]"
-          TopLeft="212.390871912329,175.182140958457">
+          TopLeft="224.995038391179,175.182140958457">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,98.8674574392243"
+              EndConnector="0,83.2674577181738"
               Start="0,0"
-              End="0,91.3674574392243">
+              End="0,75.7674577181738">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,91.3674574392243" />
+                    End="0,75.7674577181738" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-33.25638671875,39.8546271571121,66.5127734375,11.658203125"
+              BoundingBox="-33.25638671875,32.0546272965869,66.5127734375,11.658203125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_UberWriter Task.Paths[ADO NET Source Output]"
-          TopLeft="213.982885645868,49.1047617896398">
+          TopLeft="224.920385482887,49.1047617896398">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,82.0773791688172"
+              EndConnector="0,82.0773791688174"
               Start="0,0"
-              End="0,74.5773791688172">
+              End="0,74.5773791688174">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,74.5773791688172" />
+                    End="0,74.5773791688174" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14244,30 +14302,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT_UberWriter Task.Paths[Lookup Match Output]"
-          TopLeft="771.702373605577,294.966662237786">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="156.630945894503,0"
-              Start="0,0"
-              End="149.130945894503,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="149.130945894503,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="26.3740862285015,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -14310,6 +14344,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\DFT_UberWriter Task\ADO NET Source_Pull  UberWriter Data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\DFT_UberWriter Task\Stagging Destination table(Stg_Yehenew)">
     <Properties>
       <Property>
@@ -14319,14 +14361,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT_UberWriter Task\ADO NET Source_Pull  UberWriter Data">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

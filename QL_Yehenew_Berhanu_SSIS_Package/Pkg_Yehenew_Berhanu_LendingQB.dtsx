@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Yehenew_Berhanu_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="286"
-  DTS:VersionGUID="{D2102ABC-FD7A-45F6-8EAB-E91C40A77E07}">
+  DTS:VersionBuild="305"
+  DTS:VersionGUID="{62B6CCC0-C0CF-496B-8C16-E029168C1E50}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -166,7 +166,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="varRutime">
       <DTS:VariableValue
-        DTS:DataType="7">9/14/2020 7:52:43 PM</DTS:VariableValue>
+        DTS:DataType="7">9/25/2020 9:24:20 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -215,7 +215,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/14/2020 7:52:43 PM</DTS:VariableValue>
+        DTS:DataType="7">9/25/2020 9:24:20 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -789,6 +789,11 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       cachedDataType="nText"
                       cachedName="HouseOnSaleStreet"
                       lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[HouseOnSaleStreet]" />
+                    <inputColumn
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[DocumentReviewedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentReviewedDate"
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[DocumentReviewedDate]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1632,25 +1637,25 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate37]"
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate37]"
                       dataType="date"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate37]"
-                      name="ConditionsReceivedDate37"
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate37]"
+                      name="DocumentReviewedDate37"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DATE)#{Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[ConditionsReceivedDate]}</property>
+                          name="Expression">(DT_DATE)#{Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[DocumentReviewedDate]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DATE)ConditionsReceivedDate</property>
+                          name="FriendlyExpression">(DT_DATE)DocumentReviewedDate</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -2702,13 +2707,13 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)(DT_WSTR,128)#{Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[MortgageInsuranceCompany]}</property>
+                          name="Expression">(DT_STR,128,1252)([ISNULL]((DT_WSTR,128)#{Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[MortgageInsuranceCompany]}) ? "Dunatek" : (DT_WSTR,128)#{Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[MortgageInsuranceCompany]})</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,128,1252)(DT_WSTR,128)MortgageInsuranceCompany</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL((DT_WSTR,128)MortgageInsuranceCompany) ? "Dunatek" : (DT_WSTR,128)MortgageInsuranceCompany)</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -3183,6 +3188,30 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
                           name="FriendlyExpression">(DT_STR,159,1252)(DT_WSTR,159)HouseOnSaleStreet</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83b]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="128"
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83b]"
+                      name="MortgageInsuranceCompany83b"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,128,1252)([ISNULL]((DT_WSTR,128)#{Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[MortgageInsuranceCompany]}) ? "Dunatek" : (DT_WSTR,128)#{Package\DFL_ODDataSource Pull the Data from sharepoint\OData Source_Bring Data from a Sharepoint.Outputs[Output].Columns[MortgageInsuranceCompany]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL((DT_WSTR,128)MortgageInsuranceCompany) ? "Dunatek" : (DT_WSTR,128)MortgageInsuranceCompany)</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -4564,10 +4593,10 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[ConditionsReceivedDate37]"
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[DocumentReviewedDate37]"
                       cachedDataType="date"
-                      cachedName="ConditionsReceivedDate37"
-                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate37]">
+                      cachedName="DocumentReviewedDate37"
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate37]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -6080,40 +6109,6 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[MortgageInsuranceCompany83]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="MortgageInsuranceCompany83"
-                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Name of the reference table column with which the input column should be matched."
-                          name="JoinToReferenceColumn"
-                          state="escaped">MortgageInsuranceCompany</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the match is a fuzzy or an exact match."
-                          name="JoinType"
-                          typeConverter="tcJoinType">2</property>
-                        <property
-                          dataType="System.Single"
-                          description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
-                          name="MinSimilarity">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
-                          name="FuzzyComparisonFlags"
-                          typeConverter="tcComparisonFlags">1</property>
-                        <property
-                          dataType="System.UInt32"
-                          description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
-                          name="FuzzyComparisonFlagsEx"
-                          typeConverter="tcComparisonFlagsEx">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[Net_Buy_Price84]"
                       cachedDataType="numeric"
                       cachedName="Net_Buy_Price84"
@@ -6811,6 +6806,40 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           name="MinSimilarity">0</property>
                         <property
                           dataType="System.UInt32"
+                          description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
+                          name="FuzzyComparisonFlags"
+                          typeConverter="tcComparisonFlags">1</property>
+                        <property
+                          dataType="System.UInt32"
+                          description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
+                          name="FuzzyComparisonFlagsEx"
+                          typeConverter="tcComparisonFlagsEx">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[MortgageInsuranceCompany83b]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="MortgageInsuranceCompany83b"
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83b]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Name of the reference table column with which the input column should be matched."
+                          name="JoinToReferenceColumn"
+                          state="escaped">MortgageInsuranceCompany</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies whether the match is a fuzzy or an exact match."
+                          name="JoinType"
+                          typeConverter="tcJoinType">2</property>
+                        <property
+                          dataType="System.Single"
+                          description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
+                          name="MinSimilarity">0</property>
+                        <property
+                          dataType="System.Int32"
                           description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
                           name="FuzzyComparisonFlags"
                           typeConverter="tcComparisonFlags">1</property>
@@ -7697,10 +7726,10 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate37]"
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate37]"
                       dataType="date"
-                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate37]"
-                      name="ConditionsReceivedDate37">
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate37]"
+                      name="DocumentReviewedDate37">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -7711,7 +7740,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate37]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate37]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -8799,31 +8828,6 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany83]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany83]"
-                      name="MortgageInsuranceCompany83">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the reference table column that is copied to the output for each match result."
-                          name="CopyFromReferenceColumn"
-                          state="escaped" />
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the column is used to indicate confidence or similarity."
-                          name="ColumnType"
-                          typeConverter="tcColumnType">0</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[Net_Buy_Price84]"
                       dataType="numeric"
                       lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[Net_Buy_Price84]"
@@ -9318,6 +9322,31 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany83b]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany83b]"
+                      name="MortgageInsuranceCompany83b">
+                      <properties>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the reference table column that is copied to the output for each match result."
+                          name="CopyFromReferenceColumn"
+                          state="escaped" />
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
+                          name="SourceInputColumnLineageID">#{Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83b]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies whether the column is used to indicate confidence or similarity."
+                          name="ColumnType"
+                          typeConverter="tcColumnType">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
                       refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
@@ -9394,11 +9423,11 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany83]"
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany83b]"
                       dataType="r4"
-                      description="Column-level similarity score for fuzzy join on column &quot;MortgageInsuranceCompany83&quot;."
-                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany83]"
-                      name="_Similarity_MortgageInsuranceCompany83">
+                      description="Column-level similarity score for fuzzy join on column &quot;MortgageInsuranceCompany83b&quot;."
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany83b]"
+                      name="_Similarity_MortgageInsuranceCompany83b">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -9409,7 +9438,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany83b]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -11833,11 +11862,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
                       lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentResubmittedDate36]" />
                     <inputColumn
-                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[ConditionsReceivedDate37]"
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[DocumentReviewedDate37]"
                       cachedDataType="date"
-                      cachedName="ConditionsReceivedDate37"
+                      cachedName="DocumentReviewedDate37"
                       externalMetadataColumnId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
-                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate37]" />
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate37]" />
                     <inputColumn
                       refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[DocumentShippingDate38]"
                       cachedDataType="date"
@@ -12320,8 +12349,16 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="Derived Column 1"
-                      externalMetadataColumnId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
+                      externalMetadataColumnId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
                       lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\DRC_ Using derive column for converting null values into Dunatek.Outputs[Derived Column Output].Columns[Derived Column 1]" />
+                    <inputColumn
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[MortgageInsuranceCompany83b]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="MortgageInsuranceCompany83b"
+                      externalMetadataColumnId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
+                      lineageId="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany83b]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -12861,6 +12898,12 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="str"
                       length="100"
                       name="MarketSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\DFL_ODDataSource Pull the Data from sharepoint\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Insurance_Company" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -13166,6 +13209,36 @@ where [refTable].[MarketSourceCode] = ?</property>
               ReadOnlyVariables="System::PackageName,System::StartTime,User::varBody,User::varFromEmail,User::varPassword,User::varSmtpClient,User::varSmtpServerPort,User::varSubject,User::varToEmail"
               ReadWriteVariables="System::ErrorCode,System::ErrorDescription">
               <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1a5662f6bb594ca5b9ce182100730c33")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1a5662f6bb594ca5b9ce182100730c33")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -13284,35 +13357,6 @@ where [refTable].[MarketSourceCode] = ?</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Settings.get_Default():ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Sett" +
-    "ings")]
-
-namespace ST_1a5662f6bb594ca5b9ce182100730c33.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -13463,74 +13507,6 @@ namespace ST_1a5662f6bb594ca5b9ce182100730c33
 	}
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Resources.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
-    "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
-    "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
-    "):Void")]
-
-namespace ST_1a5662f6bb594ca5b9ce182100730c33.Properties {
-    
-    
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class Resources {
-        
-        private static global::System.Resources.ResourceManager resourceMan;
-        
-        private static global::System.Globalization.CultureInfo resourceCulture;
-        
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
-        }
-        
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-        
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
                 Name="Project"
                 Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
@@ -13550,45 +13526,6 @@ namespace ST_1a5662f6bb594ca5b9ce182100730c33.Properties {
     <msb:File Include="ScriptMain.cs" />
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1a5662f6bb594ca5b9ce182100730c33")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1a5662f6bb594ca5b9ce182100730c33")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="ST_1a5662f6bb594ca5b9ce182100730c33.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -13675,6 +13612,112 @@ using System.Runtime.CompilerServices;
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Settings.get_Default():ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Sett" +
+    "ings")]
+
+namespace ST_1a5662f6bb594ca5b9ce182100730c33.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Resources.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_1a5662f6bb594ca5b9ce182100730c33.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_1a5662f6bb594ca5b9ce182100730c33.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
               <BinaryItem
                 Name="ST_1a5662f6bb594ca5b9ce182100730c33.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
@@ -13861,9 +13904,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
-          Size="273.333333333334,42.6666666666667"
+          Size="314.666666666667,42.6666666666667"
           Id="Package\DFL_ODDataSource Pull the Data from sharepoint"
-          TopLeft="320.80604680692,253.049797074339" />
+          TopLeft="132.056049619514,238.099797341666" />
         <NodeLayout
           Size="306.666666666667,42.6666666666667"
           Id="Package\EST_Delete LendingQB table Using Execute task"
@@ -13871,25 +13914,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="308,42.6666666666667"
           Id="Package\EST_MaxLastModifiedDate Task Using A variable"
-          TopLeft="110.148807882464,18.5043647484795" />
+          TopLeft="102.648807994223,17.2043647717253" />
         <NodeLayout
           Size="299.333333333334,46"
           Id="Package\EST_Using the Variabls to Insert the values into ETL_log table"
-          TopLeft="313.313487394757,400.910707116869" />
+          TopLeft="530.813484153754,229.310710185316" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="460.226433767505,295.716463741006">
+          TopLeft="446.722716286181,255.871920430158">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,105.194243375863"
+              EndConnector="84.0907678675734,0"
               Start="0,0"
-              End="0,97.6942433758626">
+              End="76.5907678675734,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,97.6942433758626" />
+                    End="76.5907678675734,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13900,18 +13943,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="261.916913069485,61.1710314151462">
+          TopLeft="258.166913125365,59.871031438392">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,59.0170616738179"
+              EndConnector="0,60.317061650572"
               Start="0,0"
-              End="0,51.5170616738179">
+              End="0,52.817061650572">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.5170616738179" />
+                    End="0,52.817061650572" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13926,26 +13969,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="197.78769521708,90.1950373187083"
+              EndConnector="29.7043646963409,75.2450375860353"
               Start="0,0"
-              End="197.78769521708,82.6950373187083">
+              End="29.7043646963409,67.7450375860353">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.0975186593542" />
+                    End="0,33.6225187930177" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,41.0975186593542"
-                    Point2="0,45.0975186593542"
-                    Point3="4,45.0975186593542" />
+                    Point1="0,33.6225187930177"
+                    Point2="0,37.6225187930177"
+                    Point3="4,37.6225187930177" />
                   <mssgle:LineSegment
-                    End="193.78769521708,45.0975186593542" />
+                    End="25.7043646963409,37.6225187930177" />
                   <mssgle:CubicBezierSegment
-                    Point1="193.78769521708,45.0975186593542"
-                    Point2="197.78769521708,45.0975186593542"
-                    Point3="197.78769521708,49.0975186593542" />
+                    Point1="25.7043646963409,37.6225187930177"
+                    Point2="29.7043646963409,37.6225187930177"
+                    Point3="29.7043646963409,41.6225187930177" />
                   <mssgle:LineSegment
-                    End="197.78769521708,82.6950373187083" />
+                    End="29.7043646963409,67.7450375860353" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14048,11 +14091,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\DFL_ODDataSource Pull the Data from sharepoint\DC_using_this Derive column to conver and change the data type"
           TopLeft="149.774303323746,275.906741221617" />
         <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\DFL_ODDataSource Pull the Data from sharepoint\Row Count"
-          TopLeft="607.857133799366,457.909515621463" />
-        <NodeLayout
-          Size="303.333333333334,42.6666666666667"
+          Size="309.333333333334,55.3333333333334"
           Id="Package\DFL_ODDataSource Pull the Data from sharepoint\DRC_ Using derive column for converting null values into Dunatek"
           TopLeft="922.380938636415,453.823801408806" />
         <NodeLayout
@@ -14068,13 +14107,85 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\DFL_ODDataSource Pull the Data from sharepoint\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values"
           TopLeft="916.666653007259,269.688090415697" />
         <NodeLayout
-          Size="263.333333333334,42"
-          Id="Package\DFL_ODDataSource Pull the Data from sharepoint\CST_Remove tast Loans values from the source and put dff table"
-          TopLeft="156.941961947096,134.741664704332" />
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\DFL_ODDataSource Pull the Data from sharepoint\Row Count"
+          TopLeft="607.857133799366,457.909515621463" />
         <NodeLayout
           Size="274.666666666667,50"
           Id="Package\DFL_ODDataSource Pull the Data from sharepoint\Lookup_Market source Table For adding a coulmn into existing table"
           TopLeft="533.422611099003,273.285710267508" />
+        <NodeLayout
+          Size="263.333333333334,42"
+          Id="Package\DFL_ODDataSource Pull the Data from sharepoint\CST_Remove tast Loans values from the source and put dff table"
+          TopLeft="156.941961947096,134.741664704332" />
+        <EdgeLayout
+          Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Derived Column Output1]"
+          TopLeft="922.380938636415,480.366658515135">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="-183.190471503716,0"
+              Start="0,0"
+              End="-175.690471503716,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-175.690471503716,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Derived Column Output]"
+          TopLeft="425.774303323746,299.929559077895">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="107.648307775257,0"
+              Start="0,0"
+              End="100.148307775257,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="100.148307775257,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Default Output]"
+          TopLeft="288.191465968754,176.741664704332">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,99.1650765172846"
+              Start="0,0"
+              End="0,91.6650765172846">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.6650765172846" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-33.25638671875,40.0034366961423,66.5127734375,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Row Count Output 1]"
           TopLeft="607.857133799366,478.814080277523">
@@ -14145,7 +14256,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Fuzzy Lookup Output]"
-          TopLeft="1074.85712915517,321.688090415697">
+          TopLeft="1076.35712915517,321.688090415697">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -14163,74 +14274,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Derived Column Output1]"
-          TopLeft="922.380938636415,477.199991848468">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-183.190471503716,0"
-              Start="0,0"
-              End="-175.690471503716,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-175.690471503716,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Derived Column Output]"
-          TopLeft="425.774303323746,299.929559077895">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="107.648307775257,0"
-              Start="0,0"
-              End="100.148307775257,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="100.148307775257,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFL_ODDataSource Pull the Data from sharepoint.Paths[Default Output]"
-          TopLeft="288.191465968754,176.741664704332">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,99.1650765172846"
-              Start="0,0"
-              End="0,91.6650765172846">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,91.6650765172846" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-33.25638671875,40.0034366961423,66.5127734375,11.658203125"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Yehenew_Berhanu_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="287"
-  DTS:VersionGUID="{511DF565-4F10-4905-BA50-74AAB7FE017C}">
+  DTS:VersionBuild="346"
+  DTS:VersionGUID="{8BDF6988-0071-43BE-B11F-9FF623DF6512}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -44,17 +44,6 @@
       DTS:ObjectName="varBody">
       <DTS:VariableValue
         DTS:DataType="8">Check ETL Notification Below </DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{875D4F1D-F1F8-48F2-A516-CE79AA6296DA}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;Delete  From [dbo].[Stg_Yehenew_Berhanu_QL] Where [SourceName]='LendingQB' &quot;"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="varDeleteLendingQBRecords">
-      <DTS:VariableValue
-        DTS:DataType="8">Delete  From [dbo].[Stg_Yehenew_Berhanu_QL] Where [SourceName]='LendingQB' </DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -140,13 +129,11 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{2714331F-BAC3-4877-BE7D-DAFA29CFF57E}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[User::varPackageName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPackageName">
       <DTS:VariableValue
-        DTS:DataType="8">QL_Yehenew_Berhanu_LendingQB</DTS:VariableValue>
+        DTS:DataType="8">QL_Yehenew_Berhanu_QuickenLoan</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -177,7 +164,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="varRutime">
       <DTS:VariableValue
-        DTS:DataType="7">9/15/2020 9:38:41 AM</DTS:VariableValue>
+        DTS:DataType="7">9/24/2020 10:53:16 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -226,7 +213,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/15/2020 9:38:41 AM</DTS:VariableValue>
+        DTS:DataType="7">9/24/2020 10:53:16 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -473,11 +460,6 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[LastModifiedDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="LastModifiedDate"
-                      lineageId="Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate]" />
                     <inputColumn
                       refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[LoanOfficer__c]"
                       cachedDataType="wstr"
@@ -883,11 +865,6 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       cachedName="MilestoneStatus__c"
                       lineageId="Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[MilestoneStatus__c]" />
                     <inputColumn
-                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[MortgageInsuranceCompany__c]"
-                      cachedDataType="nText"
-                      cachedName="MortgageInsuranceCompany__c"
-                      lineageId="Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[MortgageInsuranceCompany__c]" />
-                    <inputColumn
                       refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[NetBuyPrice__c]"
                       cachedDataType="numeric"
                       cachedName="NetBuyPrice__c"
@@ -978,6 +955,21 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       cachedDataType="dbTimeStamp"
                       cachedName="LoanSetupDate__c"
                       lineageId="Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[LoanSetupDate__c]" />
+                    <inputColumn
+                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[LastModifiedDate__c]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LastModifiedDate__c"
+                      lineageId="Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate__c]" />
+                    <inputColumn
+                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[MortgageInsuranceCompany__c]"
+                      cachedDataType="nText"
+                      cachedName="MortgageInsuranceCompany__c"
+                      lineageId="Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[MortgageInsuranceCompany__c]" />
+                    <inputColumn
+                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Inputs[Derived Column Input].Columns[DocumentReviewedDate__c]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentReviewedDate__c"
+                      lineageId="Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[DocumentReviewedDate__c]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1821,25 +1813,25 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]"
+                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]"
                       dataType="date"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]"
-                      name="ConditionsReceivedDate__c37"
+                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]"
+                      name="DocumentReviewedDate__c37"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DATE)#{Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[ConditionsReceivedDate__c]}</property>
+                          name="Expression">(DT_DATE)#{Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[DocumentReviewedDate__c]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DATE)ConditionsReceivedDate__c</property>
+                          name="FriendlyExpression">(DT_DATE)DocumentReviewedDate__c</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -2275,25 +2267,25 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate57]"
+                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate__c57]"
                       dataType="date"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate57]"
-                      name="LastModifiedDate57"
+                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate__c57]"
+                      name="LastModifiedDate__c57"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_DATE)#{Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate]}</property>
+                          name="Expression">(DT_DATE)#{Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate__c]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_DATE)LastModifiedDate</property>
+                          name="FriendlyExpression">(DT_DATE)LastModifiedDate__c</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -2876,30 +2868,6 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__c83]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="128"
-                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__c83]"
-                      name="MortgageInsuranceCompany__c83"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)(DT_WSTR,128)#{Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[MortgageInsuranceCompany__c]}</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,128,1252)(DT_WSTR,128)MortgageInsuranceCompany__c</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[Net_Buy_Price__c84]"
                       dataType="numeric"
                       errorOrTruncationOperation="Computation"
@@ -3371,6 +3339,30 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
                           name="FriendlyExpression">(DT_STR,159,1252)(DT_WSTR,159)HouseOnSaleStreet__c</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__83]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="128"
+                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__83]"
+                      name="MortgageInsuranceCompany__83"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,128,1252)([ISNULL]((DT_WSTR,128)#{Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[MortgageInsuranceCompany__c]}) ? "Dunatek" : (DT_WSTR,128)#{Package\SalesForce\Pull The Data from Salesforce Source.Outputs[Salesforce Source Output].Columns[MortgageInsuranceCompany__c]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL((DT_WSTR,128)MortgageInsuranceCompany__c) ? "Dunatek" : (DT_WSTR,128)MortgageInsuranceCompany__c)</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -4752,10 +4744,10 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[ConditionsReceivedDate__c37]"
+                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[DocumentReviewedDate__c37]"
                       cachedDataType="date"
-                      cachedName="ConditionsReceivedDate__c37"
-                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]">
+                      cachedName="DocumentReviewedDate__c37"
+                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -5406,10 +5398,10 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[LastModifiedDate57]"
+                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[LastModifiedDate__c57]"
                       cachedDataType="date"
-                      cachedName="LastModifiedDate57"
-                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate57]">
+                      cachedName="LastModifiedDate__c57"
+                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate__c57]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -6975,12 +6967,12 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[MortgageInsuranceCompany__c83]"
+                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Inputs[Fuzzy Lookup Input].Columns[MortgageInsuranceCompany__83]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
-                      cachedName="MortgageInsuranceCompany__c83"
-                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__c83]">
+                      cachedName="MortgageInsuranceCompany__83"
+                      lineageId="Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__83]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -7884,10 +7876,10 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate__c37]"
+                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate__c37]"
                       dataType="date"
-                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate__c37]"
-                      name="ConditionsReceivedDate__c37">
+                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate__c37]"
+                      name="DocumentReviewedDate__c37">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -7898,7 +7890,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[ConditionsReceivedDate__c37]}</property>
+                          name="SourceInputColumnLineageID">#{Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[DocumentReviewedDate__c37]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -8358,10 +8350,10 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[LastModifiedDate57]"
+                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[LastModifiedDate__c57]"
                       dataType="date"
-                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[LastModifiedDate57]"
-                      name="LastModifiedDate57">
+                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[LastModifiedDate__c57]"
+                      name="LastModifiedDate__c57">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -8372,7 +8364,7 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate57]}</property>
+                          name="SourceInputColumnLineageID">#{Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[LastModifiedDate__c57]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -8985,29 +8977,6 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany__c83]"
-                      dataType="r4"
-                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany__c83]"
-                      name="_Similarity_MortgageInsuranceCompany__c83">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the reference table column that is copied to the output for each match result."
-                          name="CopyFromReferenceColumn"
-                          state="escaped" />
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__c83]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the column is used to indicate confidence or similarity."
-                          name="ColumnType"
-                          typeConverter="tcColumnType">3</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[Net_Buy_Price__c84]"
                       dataType="numeric"
                       lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[Net_Buy_Price__c84]"
@@ -9502,6 +9471,31 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                       </properties>
                     </outputColumn>
                     <outputColumn
+                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany__83]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany__83]"
+                      name="MortgageInsuranceCompany__83">
+                      <properties>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the reference table column that is copied to the output for each match result."
+                          name="CopyFromReferenceColumn"
+                          state="escaped" />
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
+                          name="SourceInputColumnLineageID">#{Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__83]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies whether the column is used to indicate confidence or similarity."
+                          name="ColumnType"
+                          typeConverter="tcColumnType">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
                       refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
@@ -9575,6 +9569,30 @@ values (?,?,?,?,?,?,?)</DTS:VariableValue>
                           description="Specifies whether the column is used to indicate confidence or similarity."
                           name="ColumnType"
                           typeConverter="tcColumnType">2</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany__83]"
+                      dataType="r4"
+                      description="Column-level similarity score for fuzzy join on column &quot;MortgageInsuranceCompany__83&quot;."
+                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany__83]"
+                      name="_Similarity_MortgageInsuranceCompany__83">
+                      <properties>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the reference table column that is copied to the output for each match result."
+                          name="CopyFromReferenceColumn"
+                          state="escaped" />
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
+                          name="SourceInputColumnLineageID">#{Package\SalesForce\DC_using_this Derive column to conver and change the data type.Outputs[Derived Column Output].Columns[MortgageInsuranceCompany__83]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies whether the column is used to indicate confidence or similarity."
+                          name="ColumnType"
+                          typeConverter="tcColumnType">3</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -9870,7 +9888,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     , UnderwriterRiskAssess__c
     , UnderwritingReceivedDate__c
   FROM Quicken_Loans__c
-  where LastModifiedDate &gt; @[User::varMaxLastModifiedDate]</property>
+  Where LastModifiedDate__c &gt; @[User::varMaxLastModifiedDate]</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the batch size of the query."
@@ -11722,11 +11740,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
                       lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentResubmittedDate__c36]" />
                     <inputColumn
-                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[ConditionsReceivedDate__c37]"
+                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[DocumentReviewedDate__c37]"
                       cachedDataType="date"
-                      cachedName="ConditionsReceivedDate__c37"
+                      cachedName="DocumentReviewedDate__c37"
                       externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
-                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[ConditionsReceivedDate__c37]" />
+                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[DocumentReviewedDate__c37]" />
                     <inputColumn
                       refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[DocumentShippingDate__c38]"
                       cachedDataType="date"
@@ -11863,12 +11881,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="LastLoadDate__c56"
                       externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
                       lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[LastLoadDate__c56]" />
-                    <inputColumn
-                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[LastModifiedDate57]"
-                      cachedDataType="date"
-                      cachedName="LastModifiedDate57"
-                      externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
-                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[LastModifiedDate57]" />
                     <inputColumn
                       refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[LeadDate__c58]"
                       cachedDataType="date"
@@ -12203,14 +12215,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
                       lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]" />
                     <inputColumn
-                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[Derived Column 1]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Derived Column 1"
-                      externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
-                      lineageId="Package\SalesForce\DRC_ Using derive column for converting null values into Dunatek.Outputs[Derived Column Output].Columns[Derived Column 1]" />
-                    <inputColumn
                       refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[AmortizationType__c2]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -12218,6 +12222,28 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="AmortizationType__c2"
                       externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
                       lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[AmortizationType__c2]" />
+                    <inputColumn
+                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[LastModifiedDate__c57]"
+                      cachedDataType="date"
+                      cachedName="LastModifiedDate__c57"
+                      externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
+                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[LastModifiedDate__c57]" />
+                    <inputColumn
+                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[Derived Column 1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Derived Column 1"
+                      externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      lineageId="Package\SalesForce\DRC_ Using derive column for converting null values into Dunatek.Outputs[Derived Column Output].Columns[Derived Column 1]" />
+                    <inputColumn
+                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].Columns[MortgageInsuranceCompany__83]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="MortgageInsuranceCompany__83"
+                      externalMetadataColumnId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
+                      lineageId="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values.Outputs[Fuzzy Lookup Output].Columns[MortgageInsuranceCompany__83]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -12757,6 +12783,12 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="str"
                       length="100"
                       name="MarketSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\SalesForce\Stagging Destination table(Stg_Yehenew).Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Insurance_Company" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -12831,7 +12863,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{F1FFEFAD-E8BF-4728-8265-02441468926C}"
+      DTS:DTSID="{1B1104E6-B6DB-4E57-A546-4DB48808E54B}"
       DTS:From="Package\EST_MaxGetModifiedDate Task Using A variable"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -13641,33 +13673,55 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="267.333333333334,42.6666666666667"
           Id="Package\EST_Delete Quicken Loan table Using Execute task"
-          TopLeft="467.031243040692,64.0430544103764" />
+          TopLeft="513.489575681741,62.3097211080373" />
         <NodeLayout
           Size="233.333333333334,42"
           Id="Package\EST_MaxGetModifiedDate Task Using A variable"
-          TopLeft="71.2251973513599,186.122814322916" />
+          TopLeft="111.641863415771,17.7728173332486" />
         <NodeLayout
           Size="257.333333333334,42"
           Id="Package\EST_Using the Variabls to Insert the values into ETL_log table"
-          TopLeft="505.173603583436,298.574399422975" />
+          TopLeft="472.881937397953,271.49106657393" />
         <NodeLayout
-          Size="129.333333333334,42.6666666666667"
+          Size="190.666666666667,42.6666666666667"
           Id="Package\SalesForce"
-          TopLeft="130.446426627627,294.857336021222" />
+          TopLeft="125.029760041675,274.707336381531" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="259.77975996096,317.882534388765">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="224.335811728723,59.7728173332486">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="245.393843622476,0"
+              EndConnector="0,214.934519048282"
               Start="0,0"
-              End="237.893843622476,0">
+              End="0,207.434519048282">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="237.893843622476,0" />
+                    End="0,207.434519048282" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="315.696426708342,294.265868144397">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="157.185510689611,0"
+              Start="0,0"
+              End="149.685510689611,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="149.685510689611,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13681,7 +13735,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           ParentId="Package"
           Size="840,861.333333333334"
           Id="ee7c54cf-2699-468d-b233-2d3deb76028e"
-          TopLeft="1216.29958505033,16.1261901878317">
+          TopLeft="1216.29958505033,22.6261900716027">
           <AnnotationLayout.FontInfo>
             <mssge:FontInfo
               Family="Times New Roman"
@@ -13693,28 +13747,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssge:FontInfo>
           </AnnotationLayout.FontInfo>
         </AnnotationLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="191.50247865616,228.122814322916">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,66.7345216983059"
-              Start="0,0"
-              End="0,59.2345216983059">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,59.2345216983059" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -13778,83 +13810,49 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="303.333333333334,66"
           Id="Package\SalesForce\DC_using_this Derive column to conver and change the data type"
-          TopLeft="125.101684643777,267.116265188326" />
+          TopLeft="112.601684830042,275.566265037228" />
+        <NodeLayout
+          Size="390.666666666667,42.6666666666667"
+          Id="Package\SalesForce\DRC_ Using derive column for converting null values into Dunatek"
+          TopLeft="1012.88688966872,486.664277012048" />
+        <NodeLayout
+          Size="254.666666666667,42.6666666666667"
+          Id="Package\SalesForce\Pull The Data from Salesforce Source"
+          TopLeft="140.952378852026,4.69047611852483" />
+        <NodeLayout
+          Size="276,42.6666666666667"
+          Id="Package\SalesForce\Stagging Destination table(Stg_Yehenew)"
+          TopLeft="99.139383443341,478.744834974191" />
+        <NodeLayout
+          Size="276,52"
+          Id="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values"
+          TopLeft="1065.83331745117,281.171423543692" />
+        <NodeLayout
+          Size="286,42.6666666666667"
+          Id="Package\SalesForce\CST_Remove tast Loans values from the source and put dff table"
+          TopLeft="125.364581465255,120.472617340434" />
         <NodeLayout
           Size="185.333333333334,42.6666666666667"
           Id="Package\SalesForce\Row Count"
           TopLeft="599.791657729076,484.930943709712" />
         <NodeLayout
-          Size="264,52"
+          Size="401.333333333334,51.3333333333334"
           Id="Package\SalesForce\Lookup_Market source Table For adding a coulmn into existing table"
-          TopLeft="564.910705867889,281.642852975214" />
-        <NodeLayout
-          Size="303.333333333334,42.6666666666667"
-          Id="Package\SalesForce\DRC_ Using derive column for converting null values into Dunatek"
-          TopLeft="912.886891158841,487.74761032601" />
-        <NodeLayout
-          Size="254.666666666667,42.6666666666667"
-          Id="Package\SalesForce\Pull The Data from Salesforce Source"
-          TopLeft="145.416664499789,5.72619037379818" />
-        <NodeLayout
-          Size="276,52"
-          Id="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values"
-          TopLeft="922.083319593212,286.588090113501" />
-        <NodeLayout
-          Size="296,44"
-          Id="Package\SalesForce\CST_Remove tast Loans values from the source and put dff table"
-          TopLeft="133.697914674412,122.205950642773" />
-        <NodeLayout
-          Size="276,55.3333333333334"
-          Id="Package\SalesForce\Stagging Destination table(Stg_Yehenew)"
-          TopLeft="98.0977167921965,478.744834974191" />
-        <EdgeLayout
-          Id="Package\SalesForce.Paths[Salesforce Source Output]"
-          TopLeft="272.749997833123,48.3928570404648">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="8.94791684128933,73.8130936023082"
-              Start="0,0"
-              End="8.94791684128933,66.3130936023082">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.9065468011541" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.9065468011541"
-                    Point2="0,36.9065468011541"
-                    Point3="4,36.9065468011541" />
-                  <mssgle:LineSegment
-                    End="4.94791684128933,36.9065468011541" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.94791684128933,36.9065468011541"
-                    Point2="8.94791684128933,36.9065468011541"
-                    Point3="8.94791684128933,40.9065468011541" />
-                  <mssgle:LineSegment
-                    End="8.94791684128933,66.3130936023082" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="527.410706426682,279.476186347291" />
         <EdgeLayout
           Id="Package\SalesForce.Paths[Row Count Output 1]"
-          TopLeft="599.791657729076,506.337889341951">
+          TopLeft="599.791657729076,503.171222675285">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="-225.693940936879,0"
+              EndConnector="-224.652274285735,0"
               Start="0,0"
-              End="-218.193940936879,0">
+              End="-217.152274285735,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-218.193940936879,0" />
+                    End="-217.152274285735,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13865,42 +13863,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\SalesForce.Paths[Lookup Match Output]"
-          TopLeft="828.910705867889,310.115471544358">
+          TopLeft="928.744039760015,306.157138278825">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="93.172613725323,0"
+              EndConnector="137.089277691155,0"
               Start="0,0"
-              End="85.672613725323,0">
+              End="129.589277691155,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="85.672613725323,0" />
+                    End="129.589277691155,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-5.3550798560885,5,96.3827734375,11.609375"
+              BoundingBox="16.6032521268275,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\SalesForce.Paths[Fuzzy Lookup Output]"
-          TopLeft="1062.31843870936,338.588090113501">
+          TopLeft="1206.02677022661,333.171423543692">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,149.159520212509"
+              EndConnector="0,153.492853468356"
               Start="0,0"
-              End="0,141.659520212509">
+              End="0,145.992853468356">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,141.659520212509" />
+                    End="0,145.992853468356" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13911,18 +13909,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\SalesForce.Paths[Derived Column Output1]"
-          TopLeft="428.435017977111,303.87955908177">
+          TopLeft="415.935018163375,306.854559025593">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="136.475687890779,0"
+              EndConnector="111.475688263307,0"
               Start="0,0"
-              End="128.975687890779,0">
+              End="103.975688263307,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="128.975687890779,0" />
+                    End="103.975688263307,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13933,18 +13931,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\SalesForce.Paths[Derived Column Output]"
-          TopLeft="912.886891158841,507.672610351194">
+          TopLeft="1012.88688966872,507.130943694213">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="-127.761900096432,0"
+              EndConnector="-227.761898606316,0"
               Start="0,0"
-              End="-120.261900096432,0">
+              End="-220.261898606316,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-120.261900096432,0" />
+                    End="-220.261898606316,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13955,31 +13953,79 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\SalesForce.Paths[Default Output]"
-          TopLeft="279.233132992428,166.205950642773">
+          TopLeft="266.316466480982,163.139284007101">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="0,100.910314545553"
+              EndConnector="0,112.426981030127"
               Start="0,0"
-              End="0,93.4103145455526">
+              End="0,104.926981030127">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,93.4103145455526" />
+                    End="0,104.926981030127" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-33.25638671875,40.8760557102763,66.5127734375,11.658203125"
+              BoundingBox="-33.25638671875,46.6343889525635,66.5127734375,11.658203125"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SalesForce.Paths[Salesforce Source Output]"
+          TopLeft="268.325146825307,47.3571427851915">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,73.1154745552425"
+              Start="0,0"
+              End="0,65.6154745552425">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.6154745552425" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SalesForce\Stagging Destination table(Stg_Yehenew)">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\SalesForce\Lookup_Market source Table For adding a coulmn into existing table">
     <Properties>
@@ -14000,32 +14046,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\SalesForce\Fuzzy Lookup Using Mortgage Insurance Company table in SSMS and cross Checking The source Data Values">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\SalesForce\Stagging Destination table(Stg_Yehenew)">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
