@@ -8,6 +8,8 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
+        <ServerName>DESKTOP-JVPMKO4\MSSQLSERVER01</ServerName>
+        <PathOnServer>/SSISDB/QL_Yehenew_Berhanu_ETL/QL_Yehenew_Berhanu_SSIS_Packages</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>

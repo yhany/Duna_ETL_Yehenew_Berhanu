@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-JVPMKO4</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/n1+T2Gn0GWbM8RfeG3OwAAAAACAAAAAAAQZgAAAAEAACAAAADk3xAdRQiGID7phGWM+mNvc08nvVamtT/jw5tksfzBfwAAAAAOgAAAAAIAACAAAAB2OdjGStoAqYey6W9AN4H5UOrKKXZaD+ZzRt3mmS5Eq5AAAAAsEIY6I5AuGj/F+2Ae/2EXTr6AEFHjI+R7Lek4OxAzW03R5vxfud1mRIfjW8qtvX/9PHNjXrSA7vSyRyibNqdbSL7yPZwF0sXNMoQAxgwZfivXHQU41z0/f7DLu6RavvcdmDMjaAv2xJbKGh3WQkHsVUdzfFruhQ2Abd5CMZKusZ3dfBfrHt6kpJlh4ZtyyLVAAAAAT4aU9uN43Mv7TI/tZLT+Jp4ovH1pSa+Rqwms+7sLdHZ0LZ6tN1t3n5Ke5q3RkfcEX4fQMA7EH4x+WueL1X5akw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/n1+T2Gn0GWbM8RfeG3OwAAAAACAAAAAAAQZgAAAAEAACAAAAADWdvnKxaW5ye6BfkErpcndiUaV6GkbiE67FBnVSjbsgAAAAAOgAAAAAIAACAAAADItpWS6rFQUuMzZ6V+DrveuETM13xwS/jv+bo4/wI8kZAAAACKs+6FRSZM5gpxbyprIeGSSqBMOWFKaSXt9Y1o2+YCEnTtkz+RbkpCz4zlvkFSpKYTkKjPh3fqgJcJIYz5hwSfRgX8/ekt4Sx8FUoRpy9Uoiu1j6uPENFru8S6Q45pmytL8g3zTU5HIgeRYkH5nqoMLJq+4+ZgC8aN1Mn250lFYl3CDi5j64SjRtBJJAlbS/VAAAAAf6t8Hsz9IWrO88/OgMbGEID94IasYtPFyTeS3vIfR7Be3BFFS20FEtN/snvsSvFnlrctvTbFovBci2cuIdZmaQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -949,10 +949,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Yehenew_Berhanu_LendingQB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">302</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">309</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{36F45D29-6777-4F4F-8B6A-0C3D5145B388}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E6234A71-BB52-414B-A11E-6B2A53BE0994}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -981,10 +981,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Yehenew_Berhanu_QuickenLoan</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">346</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">349</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8BDF6988-0071-43BE-B11F-9FF623DF6512}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{ACF5FAB3-DD85-4FC2-B89D-601F7F0BFE83}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1013,16 +1013,30 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Yehenew_Berhanu_UberWriter</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">323</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">325</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DC3F2CE2-4A70-411A-BA5D-8F1185396421}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{1A0408F3-0B49-46A8-B283-10C4373835E5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="DunaDatabaseWindowsNetUberWriterUberWriter_ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{D864DD91-84D7-46FC-95D0-1D893F10B28F}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=Duna.database.windows.net;User ID=UberWriter;password=Uber^5512;Initial Catalog=UberWriter;Persist Security Info=True;Application Name=SSIS-Pkg_Yehenew_Berhanu_UberWriter-{213ABD29-41FB-4FAE-98CA-FC1B8738C04A}Duna.database.windows.net.UberWriter.UberWriter;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="ODataSource_ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">{A0BC844A-30B6-4404-A8F7-9959A68A5CAA}</SSIS:Property>
@@ -1034,21 +1048,6 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0MjkwMTQ5MjAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQyOTg3ODkxOTg4OTc3NiwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsNmViZTczOWYtNjAwZC0wMDAwLTU2YmQtNTdjMzRlMzgwMDQ2LDZlYmU3MzlmLTYwMGQtMDAwMC01NmJkLTU3YzM0ZTM4MDA0NiwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxDTVpibWJhTFBHWXZjL0tJWHkrdERoZEpYYlNoSXEvb0l5TFRsV2tpZnhia21lTzBjOWYrYUE1Qk9IenNJK0dsSVlYbm5WVjVtTVhXVThkMXZCczAxaDBkeW9BbHF3U2pYZXh2L2x5a2loY2RSVmFETThnZTBaeHhkYmM5d2pmRENIOXl4VGZsZ0doYklOc0R1N0lIS1pkUjIvYy90eUh2TzVZUms1NHJhOWNrZEZYRlRkL0hmdmJqQ2dqZXZvd2MrbjlxRkhscEdBakZYUXYzaFArTjRNNGpib0ViOEdMVzJXL3Z6L1JiUzNVVzIybDIzdTFsZGgwR2pRZ0NxUEZLSUFQeG1NbHN2WnlLYUlOcWx5Mk1raElSZ1hLVHc1TGZiL2NQNzcvbFJ6bm5PUVN3dE14dG5MVlhac1ZTWDNNV0hlUWpiMEV0U2VabE1CeUIyclkyMlE9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Duna.database.windows.net.UberWriter.UberWriter.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=Duna.database.windows.net;User ID=UberWriter;Initial Catalog=UberWriter;Persist Security Info=True;Application Name=SSIS-Pkg_Yehenew_Berhanu_UberWriter-{213ABD29-41FB-4FAE-98CA-FC1B8738C04A}Duna.database.windows.net.UberWriter.UberWriter;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1149,10 +1148,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Yehenew_Berhanu_LendingPad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">400</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">460</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{AC1CA600-0383-465D-B0A1-4491F82234F8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BA01EF62-B1E4-4088-9743-5125A008A3C4}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1403,10 +1402,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Yehenew_Berhanu_SimpleNexus</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">534</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">656</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D090B313-2602-4791-BDE7-83BFDCE7B71F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{1C88289A-B789-45BE-BCAB-5DC3F35AB711}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1657,10 +1656,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Yehenew_Berhanu_Quicken_Loan_Master</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">37</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">68</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{66B2387A-5020-4DEB-BF75-BB1AD25D0B0A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E186A69A-2D60-483F-B132-F380FF66912D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
